@@ -1,0 +1,20 @@
+Projects:
+  - id: 1
+    app-id: devcloud
+    job-id: wget
+    git-url: https://github.com/dharmit/cccp-demo
+    git-branch: master
+    git-path: wget/
+    target-file: Dockerfile
+    notify-email: shahdharmit@gmail.com
+
+  - id: 2
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+
