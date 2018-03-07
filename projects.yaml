@@ -18,3 +18,12 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
 
+  - id: 3
+    app-id: bamachrn
+    job-id: python
+    git-url: https://github.com/bamachrn/cccp-python
+    git-branch: master
+    git-path: demo
+    target-file: Dockerfile.demo
+    desired-tag: release
+    notify-email: shahdharmit@gmail.com
