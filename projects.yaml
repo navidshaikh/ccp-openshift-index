@@ -11,17 +11,6 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 2
-    app-id: centos
-    job-id: centos
-    git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7
-    git-path: docker
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
-
-  - id: 3
     app-id: bamachrn
     job-id: python
     git-url: https://github.com/bamachrn/cccp-python
@@ -32,7 +21,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 4
+  - id: 3
     app-id: dharmit
     job-id: freegeoip
     git-url: https://github.com/dharmit/freegeoip
@@ -44,7 +33,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 5
+  - id: 4
     app-id: dharmit
     job-id: nsq
     git-url: https://github.com/dharmit/nsq
