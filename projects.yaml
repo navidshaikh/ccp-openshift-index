@@ -44,3 +44,15 @@ Projects:
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: centos/centos:latest
+
+  - id: 5
+    app-id: mattermost
+    job-id: mattermost-github-integration
+    git-url: https://github.com/rhdt/mattermost-github-integration
+    git-branch: centos
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 92394f2
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
