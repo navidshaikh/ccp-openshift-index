@@ -68,3 +68,29 @@ Projects:
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: centos/centos:7
+  
+  - id: 2
+    app-id: openshift
+    job-id: origin-base
+    git-url: git://github.com/openshift/origin
+    git-path: images/base
+    git-branch: release-3.9
+    target-file: Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag: latest
+    build-context: ./
+    depends-on:
+      - openshift/origin-source:latest
+
+  - id : 3
+    app-id: openshift
+    job-id: origin-cluster-capacity
+    git-url: git://github.com/openshift/origin
+    git-path: images/cluster-capacity
+    git-branch: release-3.9
+    target-file: Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag: latest
+    build-context: ./
+    depends-on:
+        - openshift/origin-source:latest
