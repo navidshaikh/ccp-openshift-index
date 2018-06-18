@@ -79,8 +79,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     desired-tag: latest
     build-context: ./
-    depends-on:
-      - openshift/origin-source:latest
+    depends-on: openshift/origin-source:latest
 
   - id : 8
     app-id: openshift
@@ -92,8 +91,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     desired-tag: latest
     build-context: ./
-    depends-on:
-        - openshift/origin-source:latest
+    depends-on: openshift/origin-source:latest
 
   - id: 9
     app-id: openshift
