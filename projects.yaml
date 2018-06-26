@@ -104,3 +104,15 @@ Projects:
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: null
+
+  - id: 10
+    app-id: nshaikh
+    job-id: anamoly
+    git-url: https://github.com/navidshaikh/containers-catalogue
+    git-branch: master
+    git-path: anamoly
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    build-context: ./
+    depends-on: null
