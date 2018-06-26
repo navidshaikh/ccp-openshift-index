@@ -1,17 +1,5 @@
 Projects:
   - id: 1
-    app-id: arrfab
-    job-id: nanoc
-    git-url: https://github.com/arrfab/container_nanoc
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    build-context: ./
-    depends-on: centos/centos:7
-
-  - id: 2
     app-id: nshaikh
     job-id: anomaly
     git-url: https://github.com/navidshaikh/containers-catalogue
