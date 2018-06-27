@@ -1,10 +1,10 @@
 Projects:
   - id: 1
-    app-id: nshaikh
+    app-id: navidshaikh
     job-id: anomaly
-    git-url: https://github.com/navidshaikh/containers-catalogue
+    git-url: https://github.com/navidshaikh/anomaly
     git-branch: master
-    git-path: anomaly
+    git-path: /
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
