@@ -10,3 +10,15 @@ Projects:
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on: null
+
+
+  - id: 2
+    app-id: bamachrn
+    job-id: python
+    git-url: https://github.com/bamachrn/cccp-python
+    git-branch: master
+    git-path: demo
+    target-file: Dockerfile.demo
+    desired-tag: release
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: centos/centos:latest
