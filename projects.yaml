@@ -68,7 +68,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: centos/centos:7
-  
+
   - id: 7
     app-id: openshift
     job-id: origin-base
@@ -106,6 +106,20 @@ Projects:
     depends-on: null
 
   - id: 10
+    app-id: bamachrn
+    job-id: pre-build
+    git-url: https://gitlab.com/kbsingh/container-prebuild.git
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: test
+    notify-email: bamachrn@gmail.com
+    depends-on: centos/centos:latest
+    build-context: ./
+    prebuild-script: pre-build.sh
+    prebuild-context: /
+
+  - id: 11
     app-id: navidshaikh
     job-id: anomaly
     git-url: https://github.com/navidshaikh/anomaly
