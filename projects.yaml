@@ -19,6 +19,6 @@ Projects:
     git-branch: master
     git-path: demo
     target-file: Dockerfile.demo
-    desired-tag: release
+    desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
