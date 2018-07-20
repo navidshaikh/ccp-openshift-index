@@ -8,8 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
-    depends-on:
-      - dharmit/freegeoip:latest
+    depends-on: null
 
   - id: 2
     app-id: bamachrn
@@ -20,7 +19,7 @@ Projects:
     target-file: Dockerfile.demo
     desired-tag: release
     notify-email: shaikhnavid14@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: null
 
   - id: 3
     app-id: dharmit
@@ -32,4 +31,6 @@ Projects:
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on:
+      - devcloud/wget:latest
+      - bamachrn/python:release
