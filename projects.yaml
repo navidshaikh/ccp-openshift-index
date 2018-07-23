@@ -33,3 +33,15 @@ Projects:
     build-context: ./
     depends-on:
       - devcloud/wget:latest
+
+  - id: 4
+    app-id: dharmit
+    job-id: nsq
+    git-url: https://github.com/dharmit/nsq
+    git-branch: pipeline
+    git-path: /
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
