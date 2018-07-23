@@ -33,4 +33,3 @@ Projects:
     build-context: ./
     depends-on:
       - devcloud/wget:latest
-      - bamachrn/python:release
