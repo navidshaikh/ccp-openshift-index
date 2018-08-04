@@ -20,15 +20,3 @@ Projects:
     desired-tag: release
     notify-email: shaikhnavid14@gmail.com
     depends-on: null
-
-  - id: 3
-    app-id: dharmit
-    job-id: freegeoip
-    git-url: https://github.com/dharmit/freegeoip
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile.centos
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    build-context: ./
-    depends-on: null
