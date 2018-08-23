@@ -3,9 +3,9 @@ Projects:
     app-id: test
     job-id: anomaly
     git-url: https://github.com/navidshaikh/anomaly
-    git-branch: master
+    git-branch: lint-failure
     git-path: /
-    target-file: Dockerfile
+    target-file: Dockerfile.centos
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
