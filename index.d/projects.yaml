@@ -69,3 +69,39 @@ Projects:
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on: centos/centos:7
+
+  - id: 7
+    app-id: openshift
+    job-id: origin-base
+    git-url: git://github.com/openshift/origin
+    git-path: images/base
+    git-branch: release-3.9
+    target-file: Dockerfile
+    notify-email: shahdharmit@gmail.com
+    desired-tag: latest
+    build-context: ./
+    depends-on: openshift/origin-source:latest
+
+  - id: 8
+    app-id: openshift
+    job-id: origin-source
+    git-url: git://github.com/mohammedzee1000/origin
+    git-path: images/source
+    git-branch: 3.9_origin-source_cccp_yaml
+    target-file: Dockerfile.pipeline
+    notify-email: shahdharmit@gmail.com
+    desired-tag: latest
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 9
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: null
