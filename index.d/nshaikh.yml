@@ -7,7 +7,7 @@ Projects:
     git-path: fail-test
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
 
   - id: 2

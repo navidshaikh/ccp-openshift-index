@@ -7,7 +7,7 @@ Projects:
     git-path: 5.20/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -22,7 +22,7 @@ Projects:
     git-path: 5.24/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -37,7 +37,7 @@ Projects:
     git-path: 2.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -52,7 +52,7 @@ Projects:
     git-path: 2.3/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -67,7 +67,7 @@ Projects:
     git-path: 2.4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -82,7 +82,7 @@ Projects:
     git-path: 4.0/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -97,7 +97,7 @@ Projects:
     git-path: 4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -112,7 +112,7 @@ Projects:
     git-path: 4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -127,7 +127,7 @@ Projects:
     git-path: 6/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -142,7 +142,7 @@ Projects:
     git-path: 8/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -161,7 +161,7 @@ Projects:
     git-path: /
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shaikhnavid14@gmail.com
     prebuild-script: cccp-prebuild.sh
     prebuild-context: /
     build-context: ./
