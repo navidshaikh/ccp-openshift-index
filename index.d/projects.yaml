@@ -9,3 +9,75 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 2
+    app-id: dharmit
+    job-id: golang
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /golang/1.8/
+    target-file: Dockerfile
+    desired-tag: 1.8
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: dharmit/base:latest
+
+  - id: 3
+    app-id: dharmit
+    job-id: python
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /python/2/
+    target-file: Dockerfile
+    desired-tag: 2.7
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 4
+    app-id: dharmit
+    job-id: python
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /python/3/
+    target-file: Dockerfile
+    desired-tag: 3.5
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 5
+    app-id: dharmit
+    job-id: base
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /base
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 6
+    app-id: dharmit
+    job-id: dotnet20
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /dotnet20/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: dharmit/base:latest
+
+  - id: 7
+    app-id: dharmit
+    job-id: beanstalkd
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /beanstalkd
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: dharmit/base:latest
+    build-context: ./
