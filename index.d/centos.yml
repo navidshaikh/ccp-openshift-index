@@ -5,7 +5,6 @@ Projects:
     git-url: https://github.com/sclorg/s2i-perl-container.git
     git-branch: master
     git-path: 5.20/
-    target-file: Dockerfile
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
@@ -16,7 +15,7 @@ Projects:
 
   - id: 2
     app-id: centos
-    job-id: perl-524-centos7
+    job-id: centos-perl
     git-url: https://github.com/sclorg/s2i-perl-container.git
     git-branch: master
     git-path: 5.24/
