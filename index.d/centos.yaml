@@ -1,0 +1,61 @@
+Projects:
+  - id: 130
+    app-id: centos
+    job-id: php-71-centos7
+    git-url: https://github.com/sclorg/s2i-php-container.git
+    git-branch: master
+    git-path: 7.1/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 131
+    app-id: centos
+    job-id: python-27-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 2.7/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 132
+    app-id: centos
+    job-id: python-34-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 3.4/
+    target-file: Dockerfile
+    job-id: ruby-24-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+
+  - id: 140
+    app-id: centos
+    job-id: passenger-40-centos7
+    git-url: https://github.com/sclorg/passenger-container.git
+    git-branch: master
+    git-path: 4.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
