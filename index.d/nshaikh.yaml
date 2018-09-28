@@ -1,0 +1,11 @@
+Projects:
+  - id: 1
+    app-id: nshaikh
+    job-id: build-fail-test
+    git-url: https://github.com/navidshaikh/fail-test-container
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: centos/centos:latest
